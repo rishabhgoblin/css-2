@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Main body */
+body{
+    width: auto;
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1520052205864-92d242b3a76b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2NpJTIwZmklMjBjaXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 5px solid #67a12a;
+    border-left: 5px solid #67a12a;
+    border-right: 5px solid #9ef33e;
+    border-bottom: 5px solid #9ef33e;
+}
+body::before{
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0.01px;
+    left: 0.01px;
+    right: 0.01px;
+    bottom: 0.01px;
+    border-top: 5px solid #9ef33e;
+    border-left: 5px solid #9ef33e;
+    border-right: 5px solid #67a12a;
+    border-bottom: 5px solid #67a12a;
+}
+/* 3 Black boxes */
+.tree{
+    width: auto;
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+}
+#box_1{
+    text-align: center;
+    left: 1rem;
+    top: 0.8rem;
+    padding:20px 2px 60px 10px;
+    /* top right bottom left */
+}
+#box_2{
+    left: 2rem;
+    padding: 35px 30px 10px 30px;
+}
+#box_3{
+    top: 1rem;
+    float: right;
+    right: 1rem;
+    padding:1px 50px 5px 50px;
+}
+/* Circle box */
+#circle{
+    height: 400px;
+    width: 400px;
+    background-color: #43a89f;
+    text-align: center;
+    border: 7px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    bottom: 5rem;
+    left: 3rem;
+}
+#circle div{
+    width:inherit;
+    height: auto;
+    position: relative;
+    top: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+#circle div p{
+    margin: 10px;
+}
+/* form box */
+#form{
+    border: 7px dashed red;
+    margin: 10px;
+    display: inline-block;
+    background-color:white;
+    color: red;
+    text-align: center;
+    position: relative;
+    left: 25rem;
+    top:9rem;
+}
+.inputs{
+margin: 1rem;
+}
+.inputs input{
+    text-align: center;
+}
+/* Menu Box */
+#menu_box{
+    display: flex;
+    justify-content: center;
+}
+#menu{
+    width: 30%;
+    padding: 15px 0px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/* Menu List Box */
+#menu_container{
+    padding: 5rem 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.menus li{
+    padding-left: 5rem;
+    color: #502e8b;
+    font-size: 20px;
+}
+.menus h1{
+    text-align: center;
+    color: #502e8b;
+    padding: 1rem;
+    font-size: 50px;
+}
+.menus hr{
+    height: 1px;
+    background-color: red;
+}
+.menus{
+    width: 25rem;
+    border: 3px solid #36731d;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: #62fbfd;
+    margin: 30px;
+}
+.ul_box{
+    padding: 1rem 1rem 1rem 2rem;
+}
+@media only screen and (max-width:1366px){
+    
+    .b_box{
+        font-size: 32px;
+    }
+}
